@@ -1,0 +1,119 @@
+
+body{
+    background: linear-gradient(-45deg,#6a11cb,#2575fc,#00dbde,#fc00ff);
+    background-size: 400% 4000%;
+    animation: gradient 8s cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 50% 0%;
+    }
+}
+#title{
+    font-size: 50px;
+    /* animation: winner 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s infinite alternate; */
+}
+
+#whole
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color:antiquewhite; */
+    align-items: center;
+    height: 350px;
+    /* width: 500px; */
+    justify-content: space-around;
+}
+#guessbar
+{
+    display: flex;
+   height: 40px;
+   width: 500px;
+   border-radius: 25px;
+   margin-top: 50px;
+   /* background-color:aquamarine; */
+
+}
+
+#guess
+{
+    /* border: 1.5px black solid; */
+    width: 75%;
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 15px;
+    border: none;
+}
+#guess:focus{
+    outline: none;
+    box-shadow: 0 0 10px cyan;
+}
+
+#butt
+{
+    width: 25%;
+    border-radius: 0px 25px 25px 0px;
+    border: 1.5px black solid;
+    border: none;
+    background-color: rgba(220,150,200,1);
+}
+
+#result
+{
+    font-size: 20px;
+    /* animation: winner 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) 2s infinite alternate; */
+}
+
+#guessbar:hover{
+    border: 3px solid rgba(220,150,200,1);
+    /* border-radius: 25px; */
+}
+
+#butt:hover{
+    cursor: pointer;
+}
+ #guess:active{
+ }
+#butt:active{
+    /* transform: rotate(45deg); */
+    /* transform: translate(0.5px,0.5px); */
+    /* transform: scale(1.05,1.05); */ 
+    background-color: rgba(230,150,200,1);
+    padding-top: 3px;
+    padding-left: 8px;
+}
+#ins{
+    padding-top: 120px;
+    text-align: center;
+}
+
+@keyframes winner{
+    from{
+        /* font-size: 50px; */
+        transform: scale(1,1);
+    }
+    to{
+        transform:scale(1.5,1.5);
+    }
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 550px;
+    padding: 40px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}

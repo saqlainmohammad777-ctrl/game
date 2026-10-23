@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PREDICT THE NUMBER</title>
+    <link rel="stylesheet" href="game.css">  
+</head>
+<body>
+    <div id="whole">
+        <div id="container">
+        <h1 id="title">PREDICT THE NUMBER</h1>
+        <div id="guessbar">
+            <input type="number" id="guess" placeholder="Enter a number" required>
+            <button onclick="check()" id="butt">Guess</button>
+        </div>
+        </div>
+        <p id="result"></p>
+    </div>
+    <p id="ins"><b>Instruction:</b> <i>You have to predict a random number from (1 to 100) in minimum attempts.</i></p>
+    <script src="game.js"></script>
+</body>
+</html>
